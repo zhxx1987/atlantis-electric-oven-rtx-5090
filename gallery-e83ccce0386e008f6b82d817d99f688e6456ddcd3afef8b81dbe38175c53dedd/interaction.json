@@ -1,0 +1,262 @@
+{
+  "schema": "atlantis-gallery-interactions/2",
+  "joints": [
+    {
+      "id": "oven_door",
+      "node": "oven_door",
+      "kind": "rotation",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "slider": false,
+      "limits": [
+        0.0,
+        1.5707963267948966
+      ],
+      "speed": 100000000.0
+    },
+    {
+      "id": "rack_slide",
+      "node": "rack_slide",
+      "kind": "translation",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "slider": false,
+      "limits": [
+        0.0,
+        0.18000000715255737
+      ],
+      "speed": 100000000.0
+    },
+    {
+      "id": "tray_slide",
+      "node": "tray_slide",
+      "kind": "translation",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "slider": false,
+      "limits": [
+        0.0,
+        0.18000000715255737
+      ],
+      "speed": 100000000.0
+    },
+    {
+      "id": "fan_rotor",
+      "node": "fan_rotor",
+      "kind": "spin",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "slider": false
+    },
+    {
+      "id": "cooling_rotor",
+      "node": "cooling_rotor",
+      "kind": "spin",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "slider": false
+    },
+    {
+      "id": "mode_control",
+      "node": "mode_control",
+      "kind": "rotation",
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "slider": false,
+      "limits": [
+        0,
+        5.497787143782138
+      ],
+      "speed": 6
+    },
+    {
+      "id": "temp_control",
+      "node": "temp_control",
+      "kind": "rotation",
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "slider": false,
+      "limits": [
+        0,
+        4.031710572106901
+      ],
+      "speed": 6,
+      "initial": 2.3596851486963333
+    }
+  ],
+  "buttons": [
+    {
+      "id": "inspection_closed",
+      "label": "Closed oven",
+      "actions": [
+        {
+          "type": "set",
+          "joint": "oven_door",
+          "value": 0
+        },
+        {
+          "type": "set",
+          "joint": "rack_slide",
+          "value": 0
+        },
+        {
+          "type": "set",
+          "joint": "tray_slide",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "inspection_open",
+      "label": "Open oven",
+      "actions": [
+        {
+          "type": "set",
+          "joint": "oven_door",
+          "value": 1.5707963267948966
+        },
+        {
+          "type": "set",
+          "joint": "rack_slide",
+          "value": 0
+        },
+        {
+          "type": "set",
+          "joint": "tray_slide",
+          "value": 0
+        }
+      ],
+      "node": "handle"
+    },
+    {
+      "id": "inspection_tray",
+      "label": "Extend GPU tray",
+      "actions": [
+        {
+          "type": "set",
+          "joint": "oven_door",
+          "value": 1.5707963267948966
+        },
+        {
+          "type": "set",
+          "joint": "rack_slide",
+          "value": 0
+        },
+        {
+          "type": "set",
+          "joint": "tray_slide",
+          "value": 0.18
+        }
+      ],
+      "node": "tray"
+    },
+    {
+      "id": "inspection_rack",
+      "label": "Extend wire rack",
+      "actions": [
+        {
+          "type": "set",
+          "joint": "oven_door",
+          "value": 1.5707963267948966
+        },
+        {
+          "type": "set",
+          "joint": "rack_slide",
+          "value": 0.18
+        },
+        {
+          "type": "set",
+          "joint": "tray_slide",
+          "value": 0
+        }
+      ],
+      "node": "rack_perimeter"
+    },
+    {
+      "id": "mode_dial_inspect",
+      "label": "Mode dial: Off / Fan",
+      "node": "mode_knob",
+      "actions": [
+        {
+          "type": "toggle",
+          "joint": "mode_control",
+          "values": [
+            0,
+            1.5707963267948966
+          ]
+        }
+      ]
+    },
+    {
+      "id": "temp_dial_inspect",
+      "label": "Temperature dial: 180 / 250 °C",
+      "node": "temp_knob",
+      "actions": [
+        {
+          "type": "toggle",
+          "joint": "temp_control",
+          "values": [
+            2.3596851486963333,
+            3.595378259108319
+          ]
+        }
+      ]
+    }
+  ]
+}
