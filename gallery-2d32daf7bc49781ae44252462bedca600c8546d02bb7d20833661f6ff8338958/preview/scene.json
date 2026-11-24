@@ -1,0 +1,515 @@
+{
+  "schema": "aps-webgpu-scene/1",
+  "title": "Electric oven · GeForce RTX 5090 Founders Edition",
+  "assets": [
+    {
+      "id": "oven",
+      "kind": "glb",
+      "file": "oven.glb"
+    }
+  ],
+  "camera": {
+    "position": [
+      0.7,
+      0.72,
+      1.13
+    ],
+    "target": [
+      0,
+      0.26,
+      -0.065
+    ],
+    "fov": 48,
+    "near": 0.0001,
+    "far": 1000.0
+  },
+  "cameras": {
+    "Overview": {
+      "position": [
+        0.7,
+        0.72,
+        1.13
+      ],
+      "target": [
+        0,
+        0.26,
+        -0.065
+      ],
+      "fov": 48,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "Front": {
+      "position": [
+        0,
+        0.305,
+        1.5
+      ],
+      "target": [
+        0,
+        0.305,
+        -0.08
+      ],
+      "fov": 30,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "Side": {
+      "position": [
+        1.5,
+        0.3,
+        -0.22
+      ],
+      "target": [
+        0,
+        0.3,
+        -0.22
+      ],
+      "fov": 30,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "Top": {
+      "position": [
+        0,
+        1.8,
+        -0.2
+      ],
+      "target": [
+        0,
+        0.28,
+        -0.2
+      ],
+      "fov": 30,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "Interior": {
+      "position": [
+        0.49,
+        0.67,
+        0.92
+      ],
+      "target": [
+        0,
+        0.26,
+        -0.21
+      ],
+      "fov": 31,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "HingeLeft": {
+      "position": [
+        -0.39,
+        0.18,
+        0.31
+      ],
+      "target": [
+        -0.26,
+        0.08,
+        0.008
+      ],
+      "fov": 27,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "HingeRight": {
+      "position": [
+        0.39,
+        0.18,
+        0.31
+      ],
+      "target": [
+        0.26,
+        0.08,
+        0.008
+      ],
+      "fov": 27,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "Rear": {
+      "position": [
+        0.95,
+        0.75,
+        -1.48
+      ],
+      "target": [
+        0,
+        0.29,
+        -0.22
+      ],
+      "fov": 34,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "HingeLeftInner": {
+      "position": [
+        -0.15,
+        0.34,
+        0.21
+      ],
+      "target": [
+        -0.265,
+        0.085,
+        0.01
+      ],
+      "fov": 23,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "HingeRightInner": {
+      "position": [
+        0.15,
+        0.34,
+        0.21
+      ],
+      "target": [
+        0.265,
+        0.085,
+        0.01
+      ],
+      "fov": 23,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "RoofLamp": {
+      "position": [
+        0.055,
+        0.345,
+        -0.05
+      ],
+      "target": [
+        0,
+        0.45,
+        -0.326
+      ],
+      "fov": 30,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "ShelfBearing": {
+      "position": [
+        -0.13,
+        0.248,
+        -0.062
+      ],
+      "target": [
+        -0.213,
+        0.268,
+        -0.163
+      ],
+      "fov": 49,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "LowerHeaterMount": {
+      "position": [
+        0.107,
+        0.143,
+        -0.097
+      ],
+      "target": [
+        0.158,
+        0.108,
+        -0.165
+      ],
+      "fov": 51,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "GuardMount": {
+      "position": [
+        0.13,
+        0.32,
+        -0.188
+      ],
+      "target": [
+        0.105,
+        0.2785,
+        -0.354
+      ],
+      "fov": 38,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "CradleSeat": {
+      "position": [
+        -0.087,
+        0.05,
+        -0.164
+      ],
+      "target": [
+        -0.193,
+        0.066,
+        -0.122
+      ],
+      "fov": 52,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "CoolingHousing": {
+      "position": [
+        0.125,
+        0.553,
+        -0.476
+      ],
+      "target": [
+        0.004,
+        0.526,
+        -0.425
+      ],
+      "fov": 52,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "FasciaReturn": {
+      "position": [
+        -0.183,
+        0.526,
+        -0.075
+      ],
+      "target": [
+        -0.264,
+        0.51,
+        -0.005
+      ],
+      "fov": 43,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "FrontOrtho": {
+      "position": [
+        0,
+        0.298,
+        1.55
+      ],
+      "target": [
+        0,
+        0.298,
+        -0.21
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "projection": "orthographic",
+      "orthoHeight": 0.79,
+      "near": 0.0001,
+      "far": 10.0,
+      "fov": 28
+    },
+    "SideOrtho": {
+      "position": [
+        1.7,
+        0.298,
+        -0.212
+      ],
+      "target": [
+        0,
+        0.298,
+        -0.212
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "projection": "orthographic",
+      "orthoHeight": 0.79,
+      "near": 0.0001,
+      "far": 10.0,
+      "fov": 28
+    },
+    "TopOrtho": {
+      "position": [
+        0,
+        2,
+        -0.212
+      ],
+      "target": [
+        0,
+        0.298,
+        -0.212
+      ],
+      "up": [
+        0,
+        0,
+        -1
+      ],
+      "projection": "orthographic",
+      "orthoHeight": 0.79,
+      "near": 0.0001,
+      "far": 10.0,
+      "fov": 28
+    },
+    "OpenOverview": {
+      "position": [
+        0.7,
+        0.72,
+        1.13
+      ],
+      "target": [
+        0,
+        0.26,
+        -0.065
+      ],
+      "fov": 48,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "ControlPanel": {
+      "position": [
+        0,
+        0.546,
+        1.26
+      ],
+      "target": [
+        0,
+        0.546,
+        0.04
+      ],
+      "fov": 15,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "ModeDial": {
+      "position": [
+        -0.206,
+        0.546,
+        0.275
+      ],
+      "target": [
+        -0.206,
+        0.546,
+        0.04
+      ],
+      "fov": 26,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "TemperatureDial": {
+      "position": [
+        0.206,
+        0.546,
+        0.275
+      ],
+      "target": [
+        0.206,
+        0.546,
+        0.04
+      ],
+      "fov": 26,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "RearClearance": {
+      "position": [
+        0.16,
+        0.405,
+        -0.179
+      ],
+      "target": [
+        0,
+        0.27,
+        -0.347
+      ],
+      "fov": 52,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "DoorReturn": {
+      "position": [
+        0.42,
+        0.157,
+        0.148
+      ],
+      "target": [
+        0.262,
+        0.064,
+        -0.013
+      ],
+      "fov": 39,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "CavityOpen": {
+      "position": [
+        0.36,
+        0.465,
+        0.645
+      ],
+      "target": [
+        0,
+        0.249,
+        -0.166
+      ],
+      "fov": 45,
+      "near": 0.0001,
+      "far": 1000.0
+    },
+    "GPUTray": {
+      "position": [
+        0.065,
+        0.442,
+        0.364
+      ],
+      "target": [
+        0,
+        0.189,
+        0.038
+      ],
+      "fov": 42,
+      "near": 0.0001,
+      "far": 1000.0
+    }
+  },
+  "initial_camera": "Overview",
+  "environment": {
+    "post": {
+      "bloom": 0.14,
+      "glow": 0.12,
+      "lightShafts": 0
+    }
+  },
+  "oven_controls": {
+    "schema": "atlantis-oven/1",
+    "dial_calibration": {
+      "mode_clockwise_deg": {
+        "OFF": 0,
+        "FAN": 90,
+        "GRILL": 180,
+        "BAKE": 270,
+        "LIGHT": 315
+      },
+      "temperature_clockwise_deg": [
+        [
+          50,
+          45
+        ],
+        [
+          100,
+          98
+        ],
+        [
+          150,
+          149
+        ],
+        [
+          200,
+          201
+        ],
+        [
+          250,
+          251
+        ],
+        [
+          275,
+          276
+        ]
+      ]
+    }
+  }
+}
